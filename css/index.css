@@ -1,0 +1,73 @@
+#container {
+  background-position: 0px 0px;
+  background-size: 30%;
+  background-repeat: repeat;
+  width:100%;
+  min-height: 500px;
+  position: relative;
+  transition:all 1s;
+  animation-name: bg_transfer;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /*animation-iteration-count: infinite;*/
+  overflow:hidden;
+}
+
+/*animate*/
+@keyframes bg_transfer {
+  0% {background-position: 5px 0px;}
+  5%{background-position: 10px 0px;}
+  10% {background-position: 15px 0px;}
+  15% {background-position: 20px 0px;}
+  20% {background-position: 25px 0px;}
+  25% {background-position: 30px 0px;}
+  30% {background-position: 35px 0px;}
+  35% {background-position: 40px 0px;}
+  40% {background-position: 45px 0px;}
+  45% {background-position: 50px 0px;}
+  50% {background-position: 45px 0px;}
+  55% {background-position: 40px 0px;}
+  60% {background-position: 35px 0px;}
+  65% {background-position: 30px 0px;}
+  65% {background-position: 25px 0px;}
+  65% {background-position: 20px 0px;}
+  65% {background-position: 15px 0px;}
+  65% {background-position: 10px 0px;}
+  65% {background-position: 5px 0px;}
+}
+
+.block {
+  position: absolute;
+  display:inline-block;
+  width: 50px;
+  height: 80px;
+  bottom: 0px;
+  left: 60px;
+  background-image: url('../img/block1.png');
+  background-repeat:no-repeat;
+  background-position: 0px 0px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  
+}
+
+.home {
+  display:inline-block;
+  position: absolute;
+
+  bottom: 0px;
+
+  right: 0px;
+
+}
+
+.user {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: 1s all;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
