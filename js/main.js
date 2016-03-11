@@ -7,9 +7,9 @@ require.config({
 })
 
 // main
-//调用
+//调用c
 
-require(['app/appOne', 'lib/jquery.min' ,'lib/angular.min'], function(obj){
+require(['app/appOne', 'app/control', 'lib/jquery.min' ,'lib/angular.min'], function(obj){
   $(function() {
     var user1 = new obj.user();
     $('#change').on('click', function() {

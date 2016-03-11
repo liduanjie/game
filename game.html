@@ -9,12 +9,42 @@
 
 </head>
 <body>
+	step: 50,
+	    top: 0,
+	    left: 0,
+	    range: [1060, 500],
+	    user: 
 
   <div id="container" style="background-image:url('img/scene2.png')">
       <button id="change">change</button>
   </div>
-  <script data-main="js/app/main.js" src="js/require.js"></script>
-    
-  <script type="text/javascript" src="js/main.js"></script>
+  <div ng-app="controlPanel">
+	<div class="component-panel-wrap" ng-controller="panel1">
+		<div class="component-panel">
+		  	<div class="component-panel-header">USER(添加玩家)</div>
+		  	<div class="component-panel-body">
+		  		<div>
+		  			<label for="">step:</label>
+		  			<input type="text" ng-model="userPanel.step">
+		  		</div>
+		  		<div>
+		  			<label for="">top:</label>
+		  			<input type="text" ng-model="userPanel.top">
+		  		</div>
+		  		<div>
+		  			<label for="">left:</label>
+		  			<input type="text" ng-model="userPanel.left">
+		  		</div>
+		  		<div>
+		  			<label for="">range:</label>
+		  			<input type="text" ng-model="userPanel.range">
+		  		</div>
+		  		{{userPanel}}
+		  		<button class="cus-btn cus-btn-md cus-btn-green" ng-click="add()">添加</button>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+  <script data-main="js/main.js" src="js/require.js"></script>
 </body>
 </html>
