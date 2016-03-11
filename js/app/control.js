@@ -9,10 +9,9 @@ define(['app/control'], function() {
 				range: [800, 800]
 			},
 			blockPanel: {},
-
 		};
 		$scope.add = function() {
-			
+			var user = new obj.user();
 		}
 		console.log($scope.data)
 	})
